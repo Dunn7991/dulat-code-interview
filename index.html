@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DULAT CODE — Регистрация на собеседование</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="form-card" aria-labelledby="page-title">
+      <img class="logo" src="assets/logo.svg" alt="DULAT CODE">
+
+      <div class="intro">
+        <h1 id="page-title">Регистрация на собеседование 26.09.2026</h1>
+        <p>Заполните ФИО и выберите свободное время.</p>
+      </div>
+
+      <form id="interview-form">
+        <label class="field">
+          <span>Ваше ФИО</span>
+          <input
+            id="full-name"
+            name="fullName"
+            type="text"
+            autocomplete="name"
+            placeholder="Например: Иванов Иван Иванович"
+            required
+          >
+        </label>
+
+        <fieldset class="time-section">
+          <legend>Выберите время</legend>
+          <div id="time-list" class="time-list">
+            <!-- Свободное время загружается из Google Sheets (см. app.js) -->
+          </div>
+        </fieldset>
+
+        <button class="submit-button" type="submit">
+          Записаться
+        </button>
+
+        <p id="message" class="message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
