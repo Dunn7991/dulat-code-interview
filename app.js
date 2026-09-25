@@ -1,5 +1,5 @@
 // ↓↓↓ Вставьте сюда URL веб-приложения Apps Script (заканчивается на /exec)
-const API_URL = "https://script.google.com/macros/s/AKfycbwRRNDT6yD_E2k5pPNraYAq54sbeaSsXalMJLdaG8Nnn6XXV7_fPUMq9Vl_QYHKW3KQ/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbyNjrFMUCvkGdFNuFIUpVWtgzp-19RykIIoX-aQHto9qAdCySBBigwysSwWqlThfhy4/exec";
 
 const timeList = document.querySelector("#time-list");
 const form = document.querySelector("#interview-form");
