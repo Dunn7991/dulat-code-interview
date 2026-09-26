@@ -63,6 +63,49 @@ h1 {
   font-size: 15px;
 }
 
+.intro .event-date {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--selected);
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.field-hint {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.sold-out {
+  padding: 22px 20px;
+  border: 1px solid rgba(236, 50, 55, .25);
+  border-radius: 16px;
+  background: #fff5f5;
+  text-align: center;
+}
+
+.sold-out strong {
+  display: block;
+  color: var(--red);
+  font-size: 18px;
+}
+
+.sold-out p {
+  margin: 8px 0 0;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+[hidden] {
+  display: none !important;
+}
+
 .field {
   display: block;
   margin-bottom: 26px;

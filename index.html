@@ -12,11 +12,14 @@
       <img class="logo" src="assets/logo.svg" alt="DULAT CODE">
 
       <div class="intro">
-        <h1 id="page-title">Регистрация на собеседование 26.09.2026</h1>
-        <p>Заполните ФИО и выберите свободное время.</p>
+        <h1 id="page-title">Регистрация на собеседование</h1>
+        <p class="event-date">
+          Дата проведения: <time datetime="2026-09-27">27.09.2026</time>
+        </p>
+        <p>Заполните данные и выберите свободное время.</p>
       </div>
 
-      <form id="interview-form">
+      <form id="interview-form" novalidate>
         <label class="field">
           <span>Ваше ФИО</span>
           <input
@@ -29,6 +32,22 @@
           >
         </label>
 
+        <label class="field">
+          <span>Ник в Telegram</span>
+          <input
+            id="telegram"
+            name="telegram"
+            type="text"
+            inputmode="text"
+            autocomplete="off"
+            autocapitalize="off"
+            spellcheck="false"
+            placeholder="@username"
+            required
+          >
+          <small class="field-hint">Через него мы свяжемся с вами перед собеседованием.</small>
+        </label>
+
         <fieldset class="time-section">
           <legend>Выберите время</legend>
           <div id="time-list" class="time-list">
@@ -39,9 +58,17 @@
         <button class="submit-button" type="submit">
           Записаться
         </button>
-
-        <p id="message" class="message" aria-live="polite"></p>
       </form>
+
+      <div id="sold-out" class="sold-out" hidden>
+        <strong>Все слоты заняты</strong>
+        <p>
+          Всё время на 27.09.2026 уже выбрано другими кандидатами.
+          Свободных мест для записи не осталось.
+        </p>
+      </div>
+
+      <p id="message" class="message" aria-live="polite"></p>
     </section>
   </main>
 
